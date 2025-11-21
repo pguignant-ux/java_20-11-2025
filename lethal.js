@@ -5,8 +5,8 @@ const tasks = document.getElementById("en_cours")
 const end = document.getElementById("end")
 function readText() {
     const text = input1.value;
-
     texte.style.color = "black"
+
     if (text != "") {
         const taskName = document.createElement("p")
         taskName.textContent = text
@@ -38,9 +38,10 @@ function readText() {
             taskName.remove();
         })
         tache_b2.addEventListener("click", function () {
-            const comp = document.createElement("p")
+            const comp = document.createElement("p");
             taskName.textContent = text
-            end.appendChild("comp")
+            end.appendChild(comp)
+            comp.style.color = "black"
         })
         tache_b1.addEventListener("click", function () {
             const tache_b3 = document.createElement("input")
